@@ -27,9 +27,7 @@ mymap.on('click', (ev) => {
     
     let coord =  ev.latlng;
     console.log(coord);
-    let co = [{...coord}]
     L.marker([coord.lat, coord.lng]).addTo(mymap);
-
 });
 
 }
